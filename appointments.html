@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HealthConnect</title>
+    <meta charset="UTF-8">
+
+    <!-- styles -->
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <a><i class="fa fa-user-circle-o" style="font-size:20px"></i> Jennie Lee <i class="fa fa-caret-down" style="font-size:20px"></i></a>
+        <a>Results</a>
+        <a class="current" href="appointments.html">Appointments</a>
+    </div>
+
+    <div style="margin: 60px;">
+
+        <div id='welcome'>
+            <h2 class="bold">Hi Jennie!</h2>
+            <h3 class="regular">You have zero (0) appointments today. View your upcoming appointments.</h3>
+            <button type="general">Schedule an Appointment</button>
+        </div>
+
+        <div class="filter">
+            <a class="current">Upcoming</a>
+            <a>Past</a>
+        </div>
+
+        <hr class="solid">
+
+        <input type="search" placeholder="Search">
+        <button type="general">Advanced Search</button>
+
+        <div id='appointment header'>
+            <table type="header">
+                <tr>
+                    <td class="center" style="width: 14%">Date <i class="fa fa-sort-amount-asc" style="font-size:20px"></i></td>
+                    <td class="center" style="width: 18%">Time</td>
+                    <td style="width: 30%">Location</td>
+                    <td style="width: 38%">Reason <i class="fa fa-medkit" style="font-size:20px"></i></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id='first appt'>
+            <table type="content">
+                <tr>
+                    <td class="center" style="width: 14%">2022-1-31</td>
+                    <td class="center" style="width: 18%"><span style="font-weight: 700;">9:00 AM</span><br ><span style="color: #ACACAC">9:30 AM</span></td>
+                    <td style="width: 30%">East Campus Garage</td>
+                    <td style="width: 33%">Tartan Testing</td>
+                    <td style="width: 5%"><a href="detail.html"><i class="fa fa-angle-right" style="font-size:36px"></i></a></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id='second appt'>
+            <table type="content">
+                <tr>
+                    <td class="center" style="width: 14%">2022-2-8</td>
+                    <td class="center" style="width: 18%"><span style="font-weight: 700;">11:00 AM</span><br><span style="color: #ACACAC">11:30 AM</span></td>
+                    <td style="width: 30%">Cohon University Center</td>
+                    <td style="width: 33%">COVID-19 Booster</td>
+                    <td style="width: 5%"><i class="fa fa-angle-right" style="font-size:36px"></i></td>
+                </tr>
+            </table>
+        </div>
+
+        <p><span style="color: #ACACAC">You can receive text message appointment reminders and other alerts:</span> <span style="color: #BB0000">Enable text messages</span></p>
+
+    </div>
+
+</body>

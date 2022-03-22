@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HealthConnect</title>
+    <meta charset="UTF-8">
+
+    <!-- styles -->
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <a><i class="fa fa-user-circle-o" style="font-size:20px"></i> Jennie Lee <i class="fa fa-caret-down" style="font-size:20px"></i></a>
+        <a>Results</a>
+        <a class="current" href="appointments.html">Appointments</a>
+    </div>
+
+    <div style="margin: 60px;">
+
+        <h2 class="bold">Schedule an Appointment</h2>
+
+        <hr class="solid" style="margin-bottom: 30px;">
+
+        <div class="boxed">
+
+            <h3 class="bold">Select your primary campus status</h3>
+
+            <div class="larger">
+                <input type="radio" id="degree" name="status" value="degree">
+                <label for="degree"></label>CMU degree-seeking student (full-time or part-time)<br>
+                <input type="radio" id="staff" name="status" value="staff">
+                <label for="staff"></label>Faculty, staff, or all others<br>
+            </div>
+
+            <h3 class="bold">Reason for appointment</h3>
+
+            <div class="larger">
+                <input type="radio" id="testing" name="reason" value="testing">
+                <label for="testing"></label>Tartan Testing (asymptomatic COVID-19 testing)<br>
+                <input type="radio" id="vaccine" name="status" value="vaccine">
+                <label for="vaccine"></label>COVID-19 vaccine<br>
+                <input type="radio" id="second" name="reason" value="second">
+                <label for="second"></label>COVID-19 vaccine (second dose)<br>
+                <input type="radio" id="booster" name="status" value="booster">
+                <label for="booster"></label>COVID-19 booster<br>
+            </div>
+
+            <div style="margin-bottom: 25px;"></div>
+
+            <button type="general">Continue</button>
+
+        </div>
+
+    </div>
+</body>
