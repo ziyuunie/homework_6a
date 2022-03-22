@@ -84,14 +84,52 @@ p {
     display: block;
 }
 
-/*********** VISUAL BODY ************/
-
-.hcenter {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+/*********** POPUP ************/
+.modal {
+    display: none;
+    position: fixed;
+    overflow: auto;
+    padding-top: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
 }
 
+.popupcontent {
+    border: 2.5px solid #ACACAC;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 500px;
+    height: 250px;
+    color: black;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+
+.close {
+    color: #ACACAC;
+    float: right;
+    font-size: 40px;
+    padding-right: 15px;
+    margin-top: -30px;
+}
+
+.close:hover, .close:focus{
+    color: #BB0000;
+}
+
+/*********** CLICK ************/
 button {
     display: inline-block;
     box-sizing: border-box;
@@ -102,6 +140,13 @@ button {
     color: #FFFFFF;
     border: none;
     border-radius: 10px;
+}
+
+button:hover {
+    background-color: #FFFFFF;
+    color: #BB0000;
+    border-radius: 10px;
+    border: 2px solid #BB0000;
 }
 
 button[type=general] {
@@ -141,6 +186,7 @@ input[type=search] {
     color: #ACACAC;
 }
 
+/*********** TABLE ************/
 .filter {
     overflow: hidden;
     text-align: center;
@@ -179,8 +225,15 @@ table[type=content] {
      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/*********** BODY ************/
 ol {
     font-size: 20px;
+}
+
+.hcenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*********** COLUMNS ************/
@@ -253,12 +306,12 @@ hr.solid {
 .click {
     color: #BB0000;
     text-decoration: underline;
-  }
+}
 
   .small {
     line-height: 70%;
-  }
+}
 
   .larger {
     line-height: 170%;
-  }
+}

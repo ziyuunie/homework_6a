@@ -7,10 +7,12 @@
     <!-- styles -->
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 </head>
 
 <body>
+    <script src="script.js"></script>
     <div class="header">
         <div class="dropdown">
             <a>Jennie Lee <i class="fa fa-caret-down" style="font-size:20px"></i></a>
@@ -58,7 +60,16 @@
                 </ol>
             </div>
 
-            <button type="general">Cancel Appointment</button>
+            <button type="general" id="cancel" onclick="document.getElementById('popup').style.display='block'" >Cancel Appointment</button>
+
+            <div id="popup" class="modal">
+                <div class="popupcontent">
+                    <span onclick="document.getElementById('popup').style.display='none'" class="close">&times;</span>
+                    <h2>Are you sure you want to<br>cancel your appointment?</h2>
+                    <button type="general" onclick="document.getElementById('popup').style.display='none'">Yes</button>
+                </div>
+            </div>
+
         </div>
 
     </div>
