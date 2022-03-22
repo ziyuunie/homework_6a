@@ -40,7 +40,47 @@ p {
 
 .header a.current {
     text-decoration: underline;
+    text-underline-position: under;
     color: black;
+}
+
+.header a:hover {
+    color: #ACACAC;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdownmenu {
+    display: none;
+    position: absolute;
+    top: 55px;
+    background-color: #FFFFFF;
+    color: black;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdownmenu a {
+    float: none;
+    font-size: 20px;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+
+.dropdownmenu a:hover {
+    background-color: #ACACAC;
+    color: black;
+}
+
+.dropdown:hover .dropdownmenu {
+    display: block;
 }
 
 /*********** VISUAL BODY ************/
