@@ -48,6 +48,7 @@ p {
     color: #ACACAC;
 }
 
+/*********** DROPDOWN ************/
 .dropdown {
     float: right;
     overflow: hidden;
@@ -84,6 +85,12 @@ p {
 }
 
 /*********** VISUAL BODY ************/
+
+.hcenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 button {
     display: inline-block;
