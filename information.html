@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <script src="script.js"></script>
     <div class="header">
         <div class="dropdown">
             <a>Jennie Lee <i class="fa fa-caret-down" style="font-size:20px"></i></a>
@@ -31,37 +32,36 @@
 
         <hr class="solid" style="margin-bottom: 30px;">
 
-        <form>
-
             <div class="boxed">
+            <form id="schedule1">
 
                 <h3 class="bold">Select your primary campus status</h3>
                 <div class="larger">
                     <input type="radio" id="degree" name="status" value="degree">
-                    <label for="degree"></label>CMU degree-seeking student (full-time or part-time)<br>
+                    <label for="degree" class="fs20">CMU degree-seeking student (full-time or part-time)</label><br>
                     <input type="radio" id="staff" name="status" value="staff">
-                    <label for="staff"></label>Faculty, staff, or all others<br>
+                    <label for="staff" class="fs20">Faculty, staff, or all others</label><br>
                 </div>
 
                 <h3 class="bold">Reason for appointment</h3>
                 <div class="larger">
                     <input type="radio" id="testing" name="reason" value="testing">
-                    <label for="testing"></label>Tartan Testing (asymptomatic COVID-19 testing)<br>
-                    <input type="radio" id="vaccine" name="status" value="vaccine">
-                    <label for="vaccine"></label>COVID-19 vaccine<br>
+                    <label for="testing" class="fs20">Tartan Testing (asymptomatic COVID-19 testing)</label><br>
+                    <input type="radio" id="vaccine" name="reason" value="vaccine">
+                    <label for="vaccine" class="fs20">COVID-19 vaccine</label><br>
                     <input type="radio" id="second" name="reason" value="second">
-                    <label for="second"></label>COVID-19 vaccine (second dose)<br>
-                    <input type="radio" id="booster" name="status" value="booster">
-                    <label for="booster"></label>COVID-19 booster<br>
+                    <label for="second" class="fs20">COVID-19 vaccine (second dose)</label><br>
+                    <input type="radio" id="booster" name="reason" value="booster">
+                    <label for="booster" class="fs20">COVID-19 booster</label><br>
                 </div>
 
-                <div style="margin-bottom: 25px;"></div>
+                <div style="margin-bottom: 40px;"></div>
 
-                <button type="general">Continue</button>
+                <button type="general"><a href="information2.html" style="text-decoration: none; color: inherit;">Continue</a></button>
 
+            </form>
             </div>
 
-        </form>
-
     </div>
+
 </body>

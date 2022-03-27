@@ -19,15 +19,13 @@
 
             <div class="column right">
                 <form>
-                    <input type="text" placeholder="Username" name="uname" required>
-                    <input type="text" placeholder="Password" name="pw" required>
+                    <input type="text" placeholder="Username" name="uname" minlength="3"maxlength="12" required>
+                    <input type="password" placeholder="Password" name="pw" minlength="3"maxlength="12" required>
                 </form>
 
-                <p class="pass" style="font-size: 14px;">Forgot password?</p>
+                <a href="mailto:healthconnect@andrew.cmu.edu"><p class="pass" style="font-size: 14px;">Forgot password?</p></a>
 
-                <button type="login">
-                    <a href="appointments.html" style="color: #FFFFFF; text-decoration: none;">LOGIN</a>
-                </button>
+                <button type="login"><a href="appointments.html" style="text-decoration: none; color: inherit;">LOGIN</a></button>
             </div>
         </div>
 

@@ -48,6 +48,24 @@ p {
     color: #ACACAC;
 }
 
+/*********** LINKS ************/
+a:link {
+    color: #ACACAC;
+    text-underline-position: under;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: #BB0000;
+}
+
+a:active {
+    color: black;
+}
+
 /*********** DROPDOWN ************/
 .dropdown {
     float: right;
@@ -140,6 +158,7 @@ button {
     color: #FFFFFF;
     border: none;
     border-radius: 10px;
+    border: 2px solid #BB0000;
 }
 
 button:hover {
@@ -150,6 +169,12 @@ button:hover {
 }
 
 button[type=general] {
+    font-size: 20px;
+    padding:  15px;
+    margin: 0px;
+}
+
+button[type=submit] {
     font-size: 20px;
     padding:  15px;
     margin: 0px;
@@ -171,7 +196,17 @@ input[type=text] {
     border: 1px solid #BB0000;
     box-sizing: border-box;
     border-radius: 10px;
-    color: #ACACAC;
+}
+
+input[type=password] {
+    width: 330px;
+    font-size: 20px;
+    padding:15px 0px 15px 10px;
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid #BB0000;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 
 input[type=search] {
@@ -186,6 +221,17 @@ input[type=search] {
     color: #ACACAC;
 }
 
+input[type="radio"] {
+  margin-top: -1px;
+  vertical-align: middle;
+}
+
+select {
+    height: 35px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+}
 /*********** TABLE ************/
 .filter {
     overflow: hidden;
@@ -295,7 +341,6 @@ hr.solid {
 
 .pass {
     text-align: right;
-    color: #ACACAC;
     margin-right: 10px;
 }
 
@@ -315,3 +360,8 @@ hr.solid {
   .larger {
     line-height: 170%;
 }
+
+  .fs20 {
+    font-size: 20px;
+    line-height: 160%;
+  }

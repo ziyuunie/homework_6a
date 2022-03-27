@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <script src="script.js"></script>
     <div class="header">
         <div class="dropdown">
             <a>Jennie Lee <i class="fa fa-caret-down" style="font-size:20px"></i></a>
@@ -31,36 +32,65 @@
 
         <hr class="solid" style="margin-bottom: 30px;">
 
-        <form>
+        <form id="schedule2" action="detail.html">
 
             <div class="boxed">
 
                 <h3 class="bold">Select location for appointment</h3>
                 <div class="larger">
-                    <input list="locations" name="location">
-                    <datalist id="locations">
-                        <option value="East Campus Garage">
-                        <option value="Cohon University Center">
-                    </datalist>
+                    <select id="location" name=location>
+                        <option value="ecg">East Campus Garage</option>
+                        <option value="uc">Cohon University Center</option>
+                    </select>
                 </div>
 
                 <h3 class="bold">Select appointment date</h3>
                 <div class="larger">
-                    <input type="date" id="apptdate" name="apptdate">
+                    <select id="date" name="date" onclick="chooseLocation()">
+                        <option value="jan">January 31, 2022</option>
+                        <option value="feb">February 8, 2022</option>
+                    </select>
+            <!--    <select id="mm" name="mm">
+                        <option value="jan">January</option>
+                        <option value="feb">February</option>
+                    </select>
+                    <select id="dd" name="dd">
+                        <option value="31">31</option>
+                        <option value="8">8</option>
+                    </select>
+                    <select id="yyyy" name="yyyy">
+                        <option value="2022">2022</option>
+                    </select> -->
                 </div>
 
                 <h3 class="bold">Select appointment time</h3>
                 <div class="larger">
-                    <input type="time" id="appttime" name="appttime">
+                <select id="time" name="time" onclick="chooseLocation()">
+                    <option value="9:00AM">9:00 AM</option>
+                    <option value="11:30AM">11:30 AM</option>
+                </select>
+        <!--    <select id="hr" name="hr">
+                        <option value="9">9</option>
+                        <option value="11">11</option>
+                    </select>
+                    <select id="min" name="min">
+                        <option value="00">00</option>
+                        <option value="30">30</option>
+                    </select>
+                    <select id="ampm" name="ampm">
+                        <option value="am">AM</option>
+                        <option value="pm">PM</option>
+                    </select> -->
                 </div>
 
-                <div style="margin-bottom: 25px;"></div>
+                <div style="margin-bottom: 40px;"></div>
 
-                <button type="general">Submit</button>
+                <button onclick="scheduleAppt()" type="submit"><a href="detail.html" style="text-decoration: none; color: inherit;">Confirm</a></button>
 
             </div>
 
         </form>
 
     </div>
+
 </body>
